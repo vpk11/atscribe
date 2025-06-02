@@ -55,6 +55,12 @@ atscribe path/to/resume.pdf path/to/job_description.pdf
 # Replace /PATH_TO_YOUR_CLONED_ATSCRIBE_REPO/ with the actual path to the repository
 export PATH=/PATH_TO_YOUR_CLONED_ATSCRIBE_REPO/bin/:$PATH
 ```
+AND set environment variables in the same file:
+```text
+GEMINI_API_KEY: Your Gemini API key, required if `USE_OLLAMA` is set to false.
+USE_OLLAMA: Set to `true` if you want to use Ollama, otherwise set to `false`.
+MODEL_NAME: The name of the model you want to use (e.g., `gemini-2.0-flash`).
+```
 - Run `atscribe` from the command line:
 ```sh
 atscribe path/to/resume.pdf path/to/job_description.pdf
