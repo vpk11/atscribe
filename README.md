@@ -1,6 +1,7 @@
 # ATScribe - AI Powered ATS compatible resume generator
+[![GitHub Contributors](https://img.shields.io/github/contributors/vpk11/atscribe)](https://github.com/vpk11/atscribe/graphs/contributors)
+[![Ruff](https://github.com/vpk11/atscribe/actions/workflows/linter.yml/badge.svg)](https://github.com/vpk11/atscribe/actions/workflows/linter.yml)
 ![ATScribe Cover Image](assets/cover_image.jpeg)
-
 
 ATScribe is a command line tool that uses AI to generate ATS (Applicant Tracking System) compatible resumes. It leverages the power of LLM to create resumes that are optimized for ATS systems, ensuring that your resume gets noticed by recruiters and hiring managers.
 ## Features🚀
@@ -87,14 +88,6 @@ uv sync
 ```sh
 bin/atscribe path/to/resume.pdf path/to/job_description.pdf
 ```
----
-## Team🚀
-> Our Contributors
-
-<a href="https://github.com/vpk11/atscribe/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=vpk11/atscribe" />
-</a>
-
 ---
 
 ## References🚀
