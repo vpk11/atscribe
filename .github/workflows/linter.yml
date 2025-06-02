@@ -1,0 +1,33 @@
+name: Ruff Linter and Formatter
+run-name: Running Ruff Linter and Formatter🔎
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  lint-and-format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: ATScribe
+        run: |
+          echo "ATScribe🎉: Installing dependencies..."
+          uv sync --all-extras --dev
+          echo "ATScribe🎉: Ruff check..."
+          uv run ruff check

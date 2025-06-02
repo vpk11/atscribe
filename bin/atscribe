@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+SCRIPT_PATH="$(realpath "$0")"
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+
+
+cd "$SCRIPT_DIR/../src" || exit
+
+# Run using uv
+"$HOME/.local/bin/uv" run main.py "$@"

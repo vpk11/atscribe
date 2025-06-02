@@ -1,0 +1,38 @@
+[project]
+name = "atscribe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "argparse>=1.4.0",
+    "dotenv>=0.9.9",
+    "langchain>=0.3.25",
+    "langchain-google-genai>=2.1.5",
+    "langchain-ollama>=0.3.3",
+    "langgraph>=0.4.7",
+    "ollama>=0.5.1",
+    "pypdf>=5.6.0",
+    "rich>=14.0.0",
+    "setuptools>=80.9.0",
+    "wheel>=0.45.1",
+    "yaspin>=3.1.0",
+]
+
+[project.scripts]
+atscribe = "main:main"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+backend-path = "." # or omit if setuptools is in requires
+
+[tool.setuptools]
+package-dir = {"" = "src"} # Tells setuptools that packages are under 'src'
+packages = ["services", "utils"]
+py-modules = ["main", "atscribe"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.12",
+]
