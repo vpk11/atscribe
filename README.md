@@ -6,7 +6,7 @@
 ATScribe is a command line tool that uses AI to generate ATS (Applicant Tracking System) compatible resumes. It leverages the power of LLM to create resumes that are optimized for ATS systems, ensuring that your resume gets noticed by recruiters and hiring managers.
 ## Features🚀
 - AI Powered ATS compatible resume generator.
-- Currently supports only `Gemini` and `Ollama`
+- Supports both `Gemini` and `Ollama`
 
 ## Technology Stack🚀
 - **Python 3.13**
