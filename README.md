@@ -25,7 +25,7 @@ ATScribe is a command line tool that uses AI to generate ATS (Applicant Tracking
 - Download the `whl` binary from the [releases page](https://github.com/vpk11/atscribe/releases)
 - Add environment variables to your `.bashrc` or `.zshrc` file or equivalent shell configuration file:
 ```text
-GEMINI_API_KEY: Your Gemini API key, required if `USE_OLLAMA` is set to false.
+GOOGLE_API_KEY: Your Google API key, required if `USE_OLLAMA` is set to false.
 USE_OLLAMA: Set to `true` if you want to use Ollama, otherwise set to `false`.
 MODEL_NAME: The name of the model you want to use (e.g., `gemini-2.0-flash`).
 ```
@@ -76,7 +76,7 @@ atscribe path/to/resume.pdf path/to/job_description.pdf
 cp .env.example .env
 ```
 - Edit the `.env` file to configure the following environment variables:
-  - `GEMINI_API_KEY`: Your Gemini API key, required if `USE_OLLAMA` is set to false.
+- `GOOGLE_API_KEY`: Your Google API key, required if `USE_OLLAMA` is set to false.
   - `USE_OLLAMA`: Set to `true` if you want to use Ollama, otherwise set to `false`.
   - `MODEL_NAME`: The name of the model you want to use (e.g., `gemini-2.0-flash`).
 - Install the `uv` package manager: https://docs.astral.sh/uv/getting-started/installation/
